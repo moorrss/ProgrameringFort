@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": 1,
+    "produtName": "Eluttag",
+    "price": 12.95
+  },
+  {
+    "id": 2,
+    "produtName": "Stickkontakt",
+    "price": 16.95
+  }
+]

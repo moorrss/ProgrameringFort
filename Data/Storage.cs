@@ -1,5 +1,6 @@
 ﻿using System.Text.Encodings.Web;
 using System.Text.Json;
+using Simpel_api.Models;
 
 namespace Simpel_api.Data;
 
@@ -20,8 +21,9 @@ public class Storage<T>
         return result;
     }
 
-    public static List<T> WriteJson()
+    public static void WriteJson(string path, List<T> data)
     {
-        return [];
+        var json = JsonSerializer.Serialize(data, _options);
+        File.WriteAllText(path, json);
     }
 }

@@ -32,3 +32,4 @@ C:\Users\myols\Desktop\ProgrameringForts\Simpel-api\obj\Debug\net10.0\Simpel-api
 C:\Users\myols\Desktop\ProgrameringForts\Simpel-api\obj\Debug\net10.0\Simpel-api.genruntimeconfig.cache
 C:\Users\myols\Desktop\ProgrameringForts\Simpel-api\obj\Debug\net10.0\ref\Simpel-api.dll
 C:\Users\myols\Desktop\ProgrameringForts\Simpel-api\bin\Debug\net10.0\Data\products.json
+C:\Users\myols\Desktop\ProgrameringForts\Simpel-api\obj\Debug\net10.0\Simpel-api.sourcelink.json
