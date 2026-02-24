@@ -8,5 +8,15 @@
     "id": 2,
     "produtName": "Stickkontakt",
     "price": 16.95
+  },
+  {
+    "id": 4,
+    "produtName": "Lampskärm Rea",
+    "price": 19.95
+  },
+  {
+    "id": 3,
+    "produtName": "Grenuttag",
+    "price": 12.95
   }
 ]

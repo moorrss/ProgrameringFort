@@ -24,7 +24,13 @@ public class ProductsController : ControllerBase
     public ActionResult ListProducts()
     {
         var products = Storage<Product>.ReadJson(_path);
-        return Ok(products);
+        return Ok(new
+        {
+            Success = true,
+            StatusCode = "200",
+            items = products.Count,
+            Data = products
+        });
     }
 
     [HttpGet("{id}")]
@@ -33,9 +39,19 @@ public class ProductsController : ControllerBase
         var products = Storage<Product>.ReadJson(_path);
         Product product = products.SingleOrDefault(c => c.Id == id);
 
-        if (product is null) return NotFound("Hittade inget");
+        if (product is null) return NotFound(new
+        {
+            Success = false,
+            Statuscode = 404,
+            Message = "Hittade inget.."
+        });
 
-        return Ok(product);
+        return Ok(new
+        {
+            status = true,
+            StatusCode = "200",
+            Data = products
+        });
     }
 
     [HttpPost()]
